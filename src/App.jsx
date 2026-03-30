@@ -1,9 +1,10 @@
 import React from 'react';
+import Navber from './Components/Navber/Navber';
 
 const App = () => {
   return (
     <div>
-      <h2 className='text-4xl bg-amber-700 '>Nabil</h2>
+      <Navber />
     </div>
   );
 };
