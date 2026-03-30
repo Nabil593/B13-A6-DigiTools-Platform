@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "Starter Resume Kit",
+      "description": "Perfect for beginners to create professional resumes quickly.",
+      "price": 9,
+      "period": "one-time",
+      "tag": "New",
+      "tagType": "new",
+      "features": [
+        "20+ templates",
+        "Basic ATS optimization",
+        "Export to PDF"
+      ],
+      "icon": "FileText"
+    },
+    {
+      "id": 2,
+      "name": "Pro Resume Builder",
+      "description": "Advanced resume builder with premium templates and tools.",
+      "price": 19,
+      "period": "monthly",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "100+ templates",
+        "ATS optimization",
+        "Custom sections",
+        "Export to PDF & DOCX"
+      ],
+      "icon": "Briefcase"
+    },
+    {
+      "id": 3,
+      "name": "Portfolio Website Kit",
+      "description": "Build stunning developer portfolios easily.",
+      "price": 29,
+      "period": "one-time",
+      "tag": "Best Seller",
+      "tagType": "best-seller",
+      "features": [
+        "10+ modern layouts",
+        "Responsive design",
+        "Dark mode support"
+      ],
+      "icon": "Globe"
+    },
+    {
+      "id": 4,
+      "name": "Freelancer Toolkit",
+      "description": "Everything you need to manage freelance clients.",
+      "price": 15,
+      "period": "monthly",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "Invoice generator",
+        "Client management",
+        "Project tracking"
+      ],
+      "icon": "Users"
+    },
+    {
+      "id": 5,
+      "name": "AI Content Writer",
+      "description": "Generate high-quality content using AI.",
+      "price": 25,
+      "period": "monthly",
+      "tag": "New",
+      "tagType": "new",
+      "features": [
+        "Blog generation",
+        "SEO optimization",
+        "Multi-language support"
+      ],
+      "icon": "PenTool"
+    },
+    {
+      "id": 6,
+      "name": "UI Components Pack",
+      "description": "Reusable UI components for modern web apps.",
+      "price": 39,
+      "period": "one-time",
+      "tag": "Best Seller",
+      "tagType": "best-seller",
+      "features": [
+        "200+ components",
+        "Tailwind CSS ready",
+        "Dark/light themes"
+      ],
+      "icon": "Layers"
+    },
+    {
+      "id": 7,
+      "name": "Job Tracker Pro",
+      "description": "Track your job applications and interviews easily.",
+      "price": 12,
+      "period": "monthly",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "Application tracking",
+        "Interview reminders",
+        "Analytics dashboard"
+      ],
+      "icon": "BarChart"
+    },
+    {
+      "id": 8,
+      "name": "Startup Launch Kit",
+      "description": "Launch your startup faster with ready-made tools.",
+      "price": 59,
+      "period": "yearly",
+      "tag": "Best Seller",
+      "tagType": "best-seller",
+      "features": [
+        "Landing page templates",
+        "Marketing tools",
+        "Email integration"
+      ],
+      "icon": "Rocket"
+    }
+  ]

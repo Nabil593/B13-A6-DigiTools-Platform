@@ -2,6 +2,7 @@ import React from 'react';
 import Navber from './Components/Navber/Navber';
 import Banner from './Components/Banner/Banner';
 import Stats from './Components/Stats/Stats';
+import MainSection from './Components/MainSection/MainSection';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navber />
       <Banner />
       <Stats />
+      <MainSection />
     </div>
   );
 };
