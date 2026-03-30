@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AllCounter = () => {
+const Stats = () => {
     return (
         <div className='w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>
             <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto lg:mt-20 md:mt-20 sm:mt-15 mt-15 flex items-center justify-center lg:flex-row md:flex-row flex-col gap-10 py-16'>
@@ -28,4 +28,4 @@ const AllCounter = () => {
     );
 };
 
-export default AllCounter;
+export default Stats;

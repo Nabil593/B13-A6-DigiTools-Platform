@@ -1,14 +1,14 @@
 import React from 'react';
 import Navber from './Components/Navber/Navber';
 import Banner from './Components/Banner/Banner';
-import AllCounter from './Components/AllCounter/AllCounter';
+import Stats from './Components/Stats/Stats';
 
 const App = () => {
   return (
     <div className='manrope'>
       <Navber />
       <Banner />
-      <AllCounter />
+      <Stats />
     </div>
   );
 };
