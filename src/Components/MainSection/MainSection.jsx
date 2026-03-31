@@ -1,5 +1,6 @@
 import React, { Suspense, useState } from 'react';
 import ProductsCard from './ProductsCard/ProductsCard';
+import Cart from '../Cart/Cart';
 
 const featchFunction = async() => {
     const res = await fetch('./Data.json')
@@ -16,6 +17,7 @@ const MainSection = () => {
 
     return (
         <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto lg:mt-28 md:mt-20 sm:mt-15 mt-15'>
+    
             <div className='text-center space-y-4'>
                 <h1 className='text-5xl font-extrabold'>Premium Digital Tools</h1>
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed<br></br> to boost your productivity and creativity.</p>
@@ -27,11 +29,19 @@ const MainSection = () => {
                 </div>
             </div>
 
-            <div>
-                <Suspense fallback={<div className='flex items-center justify-center h-150'><span className="loading loading-dots loading-xl"></span></div>}>
+
+            {
+                open === 'products' 
+                ? <div>
+                    <Suspense fallback={<div className='flex items-center justify-center h-150'><span className="loading loading-dots loading-xl"></span></div>}>
                     <ProductsCard featchData = {featchData}/>
+                    </Suspense>
+                 </div> 
+                : <Suspense fallback={<div className='flex items-center justify-center h-150'><span className="loading loading-dots loading-xl"></span></div>}>
+                    <Cart open = {open} setOpen ={setOpen} featchData = {featchData}/>
                 </Suspense>
-            </div>
+            }
+    
         </div>
     );
 };
