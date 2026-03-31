@@ -4,7 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 const Navber = ({ cartItem, visible }) => {
 
     return (
-        <div className='border-b-1 border-gray-300'>
+        <div className='border-b-1 border-gray-300 fixed top-0 left-0 w-full bg-white z-50'>
             <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto lg:h-[92px] md:h-20 sm:h-18 h-18 flex justify-between items-center'>
                 <div><h1 className='lg:text-4xl md:text-3xl text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent leading-tight py-1'>DigTools</h1></div>
 

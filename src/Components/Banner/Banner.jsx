@@ -6,7 +6,7 @@ import dot from '../../assets/Group 5.png';
 const Banner = () => {
     return (
         <div>
-            <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto flex lg:flex-row md:flex-row sm:flex-col flex-col justify-between items-center gap-10 lg:mt-20 md:mt-20 sm:mt-15 mt-15'>
+            <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto flex lg:flex-row md:flex-row sm:flex-col flex-col justify-between items-center gap-10 lg:mt-40 md:mt-20 sm:mt-15 mt-15'>
                 <div className='max-w-[640px] space-y-4'>
                     <div className='bg-[#E1E7FF] px-4 py-2 max-w-[300px] rounded-full'>
                     <p className='flex items-center gap-1.5 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'><span className='status animate-ping'><img src={dot} alt="dot" /></span> New: AI-Powered Tools Available</p>

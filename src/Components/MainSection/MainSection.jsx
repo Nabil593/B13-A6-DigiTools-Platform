@@ -17,7 +17,7 @@ const MainSection = ({cartItem, setcartItem, visible, setVisible }) => {
     const [open, setOpen] = useState('products');
 
     return (
-        <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto lg:mt-28 md:mt-20 sm:mt-15 mt-15'>
+        <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto lg:mt-30 md:mt-20 sm:mt-15 mt-15 mb-30'>
     
             <div className='text-center space-y-4'>
                 <h1 className='text-5xl font-extrabold'>Premium Digital Tools</h1>

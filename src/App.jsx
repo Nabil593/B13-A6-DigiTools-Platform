@@ -4,6 +4,7 @@ import Banner from './Components/Banner/Banner';
 import Stats from './Components/Stats/Stats';
 import MainSection from './Components/MainSection/MainSection';
 import { ToastContainer } from 'react-toastify';
+import StepSection from './Components/StepSection/StepSection';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
       <Banner />
       <Stats />
       <MainSection cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible}/>
+      <StepSection />
       <ToastContainer />
     </div>
   );
