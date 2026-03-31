@@ -5,9 +5,13 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
     const removeItem = (id) => {
         const finteredItem = cartItem.filter((item) => item.id !== id);
         setcartItem(finteredItem);
-        
+
         const removedItemPrice = cartItem.find((item) => item.id === id)
         setTotalPrice((prev) => prev - removedItemPrice.price);
+    }
+
+    const removeAll = () => {
+        setcartItem([]);
     }
 
     return (
@@ -45,12 +49,16 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
                             }
                         </div> 
                     }
-                    <div className='flex items-center justify-between my-4'>
-                        <p>Total</p>
-                        <h2>${totalPrice}</h2>
-                    </div>
-                    <button className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer'>Proceed to Checkout</button>
                 </div>
+            }
+            { cartItem.length > 0 &&
+            <div>
+                <div className='flex items-center justify-between my-4'>
+                        <p className='text-[16px] font-medium text-gray-600'>Total</p>
+                        <h2 className='text-2xl font-bold text-[#101727]'>${totalPrice}</h2>
+                    </div>
+                    <button onClick={removeAll} className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer'>Proceed to Checkout</button>
+            </div>
             }
         </div>
     );
