@@ -12,7 +12,7 @@
         "Basic ATS optimization",
         "Export to PDF"
       ],
-      "icon": "FileText"
+      "image": "../src/assets/products/writing_2327400 1.png"
     },
     {
       "id": 2,
@@ -25,10 +25,9 @@
       "features": [
         "100+ templates",
         "ATS optimization",
-        "Custom sections",
-        "Export to PDF & DOCX"
+        "Custom sections"
       ],
-      "icon": "Briefcase"
+      "image": "../src/assets/products/design-tool.png"
     },
     {
       "id": 3,
@@ -43,7 +42,7 @@
         "Responsive design",
         "Dark mode support"
       ],
-      "icon": "Globe"
+      "image": "../src/assets/products/portfolio.png"
     },
     {
       "id": 4,
@@ -58,7 +57,7 @@
         "Client management",
         "Project tracking"
       ],
-      "icon": "Users"
+      "image": "../src/assets/products/operation.png"
     },
     {
       "id": 5,
@@ -73,7 +72,7 @@
         "SEO optimization",
         "Multi-language support"
       ],
-      "icon": "PenTool"
+      "image": "../src/assets/products/portfolio.png"
     },
     {
       "id": 6,
@@ -88,36 +87,6 @@
         "Tailwind CSS ready",
         "Dark/light themes"
       ],
-      "icon": "Layers"
-    },
-    {
-      "id": 7,
-      "name": "Job Tracker Pro",
-      "description": "Track your job applications and interviews easily.",
-      "price": 12,
-      "period": "monthly",
-      "tag": "Popular",
-      "tagType": "popular",
-      "features": [
-        "Application tracking",
-        "Interview reminders",
-        "Analytics dashboard"
-      ],
-      "icon": "BarChart"
-    },
-    {
-      "id": 8,
-      "name": "Startup Launch Kit",
-      "description": "Launch your startup faster with ready-made tools.",
-      "price": 59,
-      "period": "yearly",
-      "tag": "Best Seller",
-      "tagType": "best-seller",
-      "features": [
-        "Landing page templates",
-        "Marketing tools",
-        "Email integration"
-      ],
-      "icon": "Rocket"
+      "image": "../src/assets/products/social-media.png"
     }
   ]

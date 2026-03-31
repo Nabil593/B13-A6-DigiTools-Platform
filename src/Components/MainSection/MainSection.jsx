@@ -1,6 +1,16 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
+import ProductsCard from './ProductsCard/ProductsCard';
+
+const featchFunction = async() => {
+    const res = await fetch('./Data.json')
+    const data = await res.json();
+    return data;
+};
+const featchData = featchFunction();
+
 
 const MainSection = () => {
+
 
     const [open, setOpen] = useState('products');
 
@@ -18,7 +28,9 @@ const MainSection = () => {
             </div>
 
             <div>
-                
+                <Suspense fallback={<div className='flex items-center justify-center h-150'><span className="loading loading-dots loading-xl"></span></div>}>
+                    <ProductsCard featchData = {featchData}/>
+                </Suspense>
             </div>
         </div>
     );
