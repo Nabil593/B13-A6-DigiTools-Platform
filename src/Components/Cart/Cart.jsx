@@ -1,4 +1,5 @@
 import { FiShoppingCart } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 
 const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
 
@@ -8,10 +9,12 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
 
         const removedItemPrice = cartItem.find((item) => item.id === id)
         setTotalPrice((prev) => prev - removedItemPrice.price);
+        toast.error('Item removed from cart!');
     }
 
     const removeAll = () => {
         setcartItem([]);
+        toast.error('All items removed from cart!');
     }
 
     return (

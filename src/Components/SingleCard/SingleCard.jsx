@@ -1,6 +1,7 @@
 import checkIcon from '../../assets/check.png'
 import { FaCheck } from 'react-icons/fa';
 import { ImTelegram } from 'react-icons/im';
+import { toast } from 'react-toastify';
 
 const SingleCard = ({ data, cartItem, setcartItem, setVisible, setTotalPrice }) => {
     
@@ -10,9 +11,11 @@ const SingleCard = ({ data, cartItem, setcartItem, setVisible, setTotalPrice }) 
          setVisible(true);
 
         if (!isAdded) {
+            toast.success('Item added to cart!');
             setcartItem((prev) => [...prev, data]);
             setTotalPrice((prev) => prev + data.price);
         }
+
      }
 
 
