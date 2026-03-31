@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import SingleCard from '../../SingleCard/SingleCard';
 
-const ProductsCard = ({featchData}) => {
+const ProductsCard = ({featchData, cartItem, setcartItem, visible, setVisible, totalPrice, setTotalPrice}) => {
     const allData = use(featchData);
 
     return (
@@ -10,7 +10,7 @@ const ProductsCard = ({featchData}) => {
                 {
                 allData.map((data) => {
                     return (
-                        <SingleCard key={data.id} data = {data} />
+                        <SingleCard key={data.id} data = {data} cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible} totalPrice = {totalPrice} setTotalPrice = {setTotalPrice}/>
                     )
                 })
                 }

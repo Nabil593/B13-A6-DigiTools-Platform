@@ -10,8 +10,9 @@ const featchFunction = async() => {
 const featchData = featchFunction();
 
 
-const MainSection = () => {
+const MainSection = ({cartItem, setcartItem, visible, setVisible }) => {
 
+    const [totalPrice, setTotalPrice] = useState(0);
 
     const [open, setOpen] = useState('products');
 
@@ -25,7 +26,7 @@ const MainSection = () => {
                 <div className='max-w-[235px] mx-auto px-1 py-1 bg-white border-2 border-gray-400 rounded-full flex items-center justify-between'>
                     <button onClick={() => setOpen('products')} className={`px-5 py-3 ${open === 'products' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer`}>Products</button>
 
-                    <button onClick={() => setOpen('cart')} className={`px-5 py-3 ${open === 'cart' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer`}>Cart (0)</button>
+                    <button onClick={() => setOpen('cart')} className={`px-5 py-3 ${open === 'cart' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer`}>Cart ({cartItem.length})</button>
                 </div>
             </div>
 
@@ -34,11 +35,11 @@ const MainSection = () => {
                 open === 'products' 
                 ? <div>
                     <Suspense fallback={<div className='flex items-center justify-center h-150'><span className="loading loading-dots loading-xl"></span></div>}>
-                    <ProductsCard featchData = {featchData}/>
+                    <ProductsCard featchData = {featchData} cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible} totalPrice = {totalPrice} setTotalPrice = {setTotalPrice}/>
                     </Suspense>
                  </div> 
                 : <Suspense fallback={<div className='flex items-center justify-center h-150'><span className="loading loading-dots loading-xl"></span></div>}>
-                    <Cart open = {open} setOpen ={setOpen} featchData = {featchData}/>
+                    <Cart open = {open} setOpen ={setOpen} featchData = {featchData} cartItem = {cartItem} setcartItem = {setcartItem} totalPrice = {totalPrice} setTotalPrice = {setTotalPrice}/>
                 </Suspense>
             }
     
