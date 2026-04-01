@@ -12,7 +12,7 @@
         "Basic ATS optimization",
         "Export to PDF"
       ],
-      "image": "../src/assets/products/writing_2327400 1.png"
+      "image": "../public/products/writing_2327400 1.png"
     },
     {
       "id": 2,
@@ -27,7 +27,7 @@
         "ATS optimization",
         "Custom sections"
       ],
-      "image": "../src/assets/products/design-tool.png"
+      "image": "../public/products/design-tool.png"
     },
     {
       "id": 3,
@@ -42,7 +42,7 @@
         "Responsive design",
         "Dark mode support"
       ],
-      "image": "../src/assets/products/portfolio.png"
+      "image": "../public/products/portfolio.png"
     },
     {
       "id": 4,
@@ -57,7 +57,7 @@
         "Client management",
         "Project tracking"
       ],
-      "image": "../src/assets/products/operation.png"
+      "image": "../public/products/operation.png"
     },
     {
       "id": 5,
@@ -72,7 +72,7 @@
         "SEO optimization",
         "Multi-language support"
       ],
-      "image": "../src/assets/products/portfolio.png"
+      "image": "../public/products/portfolio.png"
     },
     {
       "id": 6,
@@ -87,6 +87,6 @@
         "Tailwind CSS ready",
         "Dark/light themes"
       ],
-      "image": "../src/assets/products/social-media.png"
+      "image": "../public/products/social-media.png"
     }
   ]
