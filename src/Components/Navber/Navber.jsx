@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import soppingCard from '../../../public/products/shopping-cart.png';
+import soppingCard from '/products/shopping-cart.png';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navber = ({ cartItem, visible, setOpen }) => {
