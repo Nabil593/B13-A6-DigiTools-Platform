@@ -11,17 +11,17 @@ import CtaSection from './Components/CtaSection/CtaSection';
 
 const App = () => {
 
+    const [open, setOpen] = useState('products');
     const [cartItem, setcartItem] = useState([]);
     const [visible, setVisible] = useState(false);
-    
 
 
   return (
     <div className='manrope'>
-      <Navber cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible}/>
+      <Navber cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible} open = {open} setOpen = {setOpen}/>
       <Banner />
       <Stats />
-      <MainSection cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible}/>
+      <MainSection cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible} open = {open} setOpen = {setOpen}/>
       <StepSection />
       <PricingSection />
       <CtaSection />

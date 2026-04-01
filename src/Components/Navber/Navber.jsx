@@ -2,7 +2,7 @@ import { useState } from 'react';
 import soppingCard from '../../assets/products/shopping-cart.png';
 import { FiMenu, FiX } from 'react-icons/fi';
 
-const Navber = ({ cartItem, visible }) => {
+const Navber = ({ cartItem, visible, setOpen }) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const allManu = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
@@ -22,7 +22,7 @@ const Navber = ({ cartItem, visible }) => {
 
                 {/* Mobile Menu*/}
                 <div className={`
-                    ${isMenuOpen ? 'flex flex-col absolute top-[100%] left-0 w-full bg-white border-b border-gray-300 p-6 shadow-md gap-6' : 'hidden'} 
+                    ${isMenuOpen ? 'flex flex-col absolute top-[100%] left-0 w-full bg-white border-b border-gray-300 p-7 shadow-md gap-6' : 'hidden'} 
                     lg:static lg:flex lg:flex-row lg:w-auto lg:border-none lg:shadow-none lg:p-0 lg:gap-8 lg:mt-0
                 `}>
                     {
@@ -38,7 +38,9 @@ const Navber = ({ cartItem, visible }) => {
                 <div className='flex gap-4 items-center'>
                     {/* Cart */}
                     <div className='relative cursor-pointer'>
-                        <img src={soppingCard} alt="Shopping-Cart" className='w-[20px]'/>
+                        <a href="#cart-section">
+                        <img onClick={() => setOpen('cart')} src={soppingCard} alt="Shopping-Cart" className='w-[20px]'/>
+                        </a>
                         {visible && cartItem.length > 0 && (
                             <span className='absolute -top-2.5 -right-2.5 text-[10px] bg-red-500 px-[5px] py-[1px] rounded-full text-white font-bold'>
                                 {cartItem.length}
