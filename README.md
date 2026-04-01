@@ -37,16 +37,14 @@ This project is built using a modern frontend stack to ensure a fast, responsive
 - **Dynamic Totals:** Live calculation of the total price for all selected products within the cart.
 - **Removal & Reset:** Users can remove individual products from the cart or use the **Proceed to Checkout** button to clear the entire cart and reset the Navbar count.
 
-### 3. "Masterpiece" UI/UX Design
+### 3. UI/UX Design
 - Built with a focus on minimalism, featuring a responsive grid layout and smooth user interactions powered by Tailwind CSS, DaisyUI and React state management.
 
 ---
 
-## 👤 Author
+## 👤 Author: Shariea Reza Nabil
 
-**Shariea Reza Nabil**
-
-### 🔗 Connect with Me:
+### 🔗 Links:
 *Live:https://dig-tools.netlify.app/*<br>
 *Linkedin:https://www.linkedin.com/in/shariea-reza-nabil/*
 
