@@ -1,4 +1,5 @@
-import { FiShoppingCart } from 'react-icons/fi';
+import { FiDelete, FiShoppingCart } from 'react-icons/fi';
+import { MdDelete } from 'react-icons/md';
 import { toast } from 'react-toastify';
 
 const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
@@ -14,6 +15,7 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
 
     const removeAll = () => {
         setcartItem([]);
+        setTotalPrice(0);
         toast.error('All items removed from cart!');
     }
 
@@ -33,18 +35,18 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
                             {
                                 cartItem.map((item) => {
                                     return (
-                                        <div key={item.id} className='bg-gray-100 p-5 rounded-2xl flex items-center justify-between'>
+                                        <div key={item.id} className='bg-gray-100 p-5 rounded-2xl flex lg:items-center md:items-center justify-between gap-2'>
                                             <div className='flex items-center gap-3'>
                                             <div className='w-14 border-2 border-gray-200 p-3.5 rounded-full'><img src={item.image} alt={item.name}/></div>
                                             <div>
-                                                <p className='text-[20px] font-semibold'>{item.name}</p>
+                                                <p className='lg:text-[20px] md:text-[20px] text-[14px] font-semibold'>{item.name}</p>
                                                 <p className='text-[16px] font-medium text-[#627382]'>${item.price}</p>
                                             </div>
                                             </div>
 
 
                                             <div>
-                                                <button onClick={() => removeItem(item.id)} className='btn text-[#ff3939] text-[16px] font-bold'>Remove</button>
+                                                <button onClick={() => removeItem(item.id)} className='btn text-[#ff3939] text-[16px] font-bold'><MdDelete /></button>
                                             </div>
                                         </div>
                                     )

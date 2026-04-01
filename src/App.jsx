@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import StepSection from './Components/StepSection/StepSection';
 import PricingSection from './Components/PricingSection/PricingSection';
 import Footer from './Components/Footer/Footer';
+import CtaSection from './Components/CtaSection/CtaSection';
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
       <MainSection cartItem = {cartItem} setcartItem = {setcartItem} visible = {visible} setVisible = {setVisible}/>
       <StepSection />
       <PricingSection />
+      <CtaSection />
       <Footer />
       <ToastContainer />
     </div>

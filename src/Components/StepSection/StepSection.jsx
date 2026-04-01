@@ -8,11 +8,11 @@ const StepSection = () => {
         <div className='w-full bg-[#F9FAFC]'>
         <div className='w-full max-w-[1200px] lg:px-0 md:px-8 sm:px-6 px-6 mx-auto py-[120px]'>
             <div className='text-center space-y-4 mb-10'>
-                <h2 className='text-5xl font-extrabold'>Get Started in 3 Steps</h2>
+                <h2 className='lg:text-6xl md:text-5xl sm:text-5xl text-4xl font-extrabold'>Get Started in 3 Steps</h2>
                 <p className='text-[16px] text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-7 '>
+            <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-7 '>
                 <div className='relative bg-white border-2 border-gray-300 px-6 py-22 text-center rounded-2xl space-y-4'>
                     <p className='absolute top-2 right-2 text-[14px] font-bold text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-3 py-2.5 rounded-full'>01</p>
                     <div className='w-[100px] mx-auto bg-[#f1dfff] p-5 rounded-full'>
