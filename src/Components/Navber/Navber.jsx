@@ -13,9 +13,11 @@ const Navber = ({ cartItem, visible, setOpen }) => {
                 
                 {/* Logo */}
                 <div>
+                    <a href="./">
                     <h1 className='lg:text-4xl md:text-3xl text-3xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent leading-tight py-1'>
                         DigTools
                     </h1>
+                    </a>
                 </div>
 
                 {/* Navigation Links */}
