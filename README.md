@@ -42,14 +42,12 @@ This project is built using a modern frontend stack to ensure a fast, responsive
 
 ---
 
----
-
 ## 👤 Author
 
 **Shariea Reza Nabil**
 
 ### 🔗 Connect with Me:
-*Live:https://dig-tools.netlify.app/*
+*Live:https://dig-tools.netlify.app/*<br>
 *Linkedin:https://www.linkedin.com/in/shariea-reza-nabil/*
 
 ---
