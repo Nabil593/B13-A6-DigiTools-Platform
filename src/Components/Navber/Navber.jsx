@@ -5,7 +5,13 @@ import { FiMenu, FiX } from 'react-icons/fi';
 const Navber = ({ cartItem, visible, setOpen }) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const allManu = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
+    const allManu = [
+    { name: "Products", link: "#product-section" },
+    { name: "Features", link: "#features" },
+    { name: "Pricing", link: "#pricing" },
+    { name: "Testimonials", link: "#testimonials" },
+    { name: "FAQ", link: "#faq" }
+];
 
     return (
         <div className='border-b border-gray-300 fixed top-0 left-0 w-full bg-white z-50'>
@@ -29,8 +35,8 @@ const Navber = ({ cartItem, visible, setOpen }) => {
                 `}>
                     {
                         allManu.map((menu, index) => (
-                            <a href="#" key={index} className='font-medium hover:text-[#4F39F6] transition-colors'>
-                                {menu}
+                            <a href={menu.link} key={index} className='font-medium hover:text-[#4F39F6] transition-colors'>
+                                {menu.name}
                             </a>
                         ))
                     }

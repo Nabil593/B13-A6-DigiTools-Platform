@@ -5,7 +5,7 @@ const ProductsCard = ({featchData, cartItem, setcartItem, visible, setVisible, t
     const allData = use(featchData);
 
     return (
-        <div>
+        <div id="product-section">
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12 items-center'>
                 {
                 allData.map((data) => {
