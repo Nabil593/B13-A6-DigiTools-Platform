@@ -46,7 +46,7 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
 
 
                                             <div>
-                                                <button onClick={() => removeItem(item.id)} className='btn text-[#ff3939] text-[16px] font-bold'><MdDelete /></button>
+                                                <button onClick={() => removeItem(item.id)} className='btn text-[#ff3939] text-[16px] font-bold hover:opacity-80 transition-opacity'><MdDelete /></button>
                                             </div>
                                         </div>
                                     )
@@ -62,7 +62,7 @@ const Cart = ({open, cartItem, setcartItem, totalPrice, setTotalPrice}) => {
                         <p className='text-[16px] font-medium text-gray-600'>Total</p>
                         <h2 className='text-2xl font-bold text-[#101727]'>${totalPrice}</h2>
                     </div>
-                    <button onClick={removeAll} className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer'>Proceed to Checkout</button>
+                    <button onClick={removeAll} className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer hover:opacity-80 transition-opacity'>Proceed to Checkout</button>
             </div>
             }
         </div>

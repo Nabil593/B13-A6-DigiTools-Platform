@@ -21,7 +21,7 @@ const PricingSection = () => {
                                    <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>Community support</span></li>
                                    <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>1 project per month</span></li>
                                </ul>
-                            <button className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer'>Get Started Free</button>
+                            <button className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer hover:opacity-80 transition-opacity'>Get Started Free</button>
                         </div>
 
                         <div className='relative bg-gradient-to-r from-[#4F39F6] to-[#9514FA] border-2 border-gray-300 p-6 rounded-2xl text-white'>
@@ -37,7 +37,7 @@ const PricingSection = () => {
                                    <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>Cloud sync</span></li>
                                    <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>Advanced analytics</span></li>
                                </ul>
-                            <button className='w-full px-5 py-3 bg-white  rounded-full cursor-pointer'> <span className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-bold'>Start Pro Trial</span></button>
+                            <button className='w-full px-5 py-3 bg-white  rounded-full cursor-pointer'> <span className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-bold hover:opacity-80 transition-opacity'>Start Pro Trial</span></button>
                         </div>
 
                         <div className='bg-white border-2 border-gray-300 p-6 rounded-2xl'>
@@ -52,7 +52,7 @@ const PricingSection = () => {
                                    <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>SLA guarantee</span></li>
                                    <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>Custom branding</span></li>
                                </ul>
-                            <button className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer'>Contact Sales</button>
+                            <button className='w-full px-5 py-3 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-medium text-white rounded-full cursor-pointer hover:opacity-80 transition-opacity'>Contact Sales</button>
                         </div>
                         
                     </div>

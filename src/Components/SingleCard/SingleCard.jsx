@@ -40,7 +40,7 @@ const SingleCard = ({ data, cartItem, setcartItem, setVisible, setTotalPrice }) 
                     <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>{data.features[1]}</span></li>
                     <li className='flex items-center gap-2'><img src={checkIcon} alt="" className='w-4'/> <span>{data.features[2]}</span></li>
                 </ul>
-                <button  onClick={handleCart} className={`w-full px-5 py-3 ${isAdded ? 'bg-green-500' : 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'} text-[16px] font-medium text-white rounded-full cursor-pointer`}>
+                <button  onClick={handleCart} className={`w-full px-5 py-3 ${isAdded ? 'bg-green-500' : 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'} text-[16px] font-medium text-white rounded-full cursor-pointer hover:opacity-80 transition-opacity`}>
                 {isAdded 
                 ? (<div className='flex items-center justify-center gap-2'><FaCheck /> Added to Cart</div>) 
                 : 'Buy Now'

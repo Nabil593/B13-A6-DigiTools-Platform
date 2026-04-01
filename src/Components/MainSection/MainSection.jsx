@@ -22,9 +22,9 @@ const MainSection = ({cartItem, setcartItem, visible, setVisible, open, setOpen 
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed<br></br> to boost your productivity and creativity.</p>
 
                 <div className='max-w-[235px] mx-auto px-1 py-1 bg-white border-2 border-gray-400 rounded-full flex items-center justify-between'>
-                    <button onClick={() => setOpen('products')} className={`px-5 py-3 ${open === 'products' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer`}>Products</button>
+                    <button onClick={() => setOpen('products')} className={`px-5 py-3 ${open === 'products' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity`}>Products</button>
 
-                    <button onClick={() => setOpen('cart')} className={`px-5 py-3 ${open === 'cart' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer`}>Cart ({cartItem.length})</button>
+                    <button onClick={() => setOpen('cart')} className={`px-5 py-3 ${open === 'cart' ? 'bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white text-black'} text-[16px] font-medium rounded-full cursor-pointer hover:opacity-80 transition-opacity`}>Cart ({cartItem.length})</button>
                 </div>
             </div>
 

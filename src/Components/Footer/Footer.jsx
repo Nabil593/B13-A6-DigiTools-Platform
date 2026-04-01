@@ -23,35 +23,35 @@ const Footer = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <p className='font-medium text-2xl'>Product</p>
+                        <p className='font-medium text-2xl'>Company</p>
                         <div className='text-[16px] opacity-80 space-y-4 flex flex-col'>
-                            <a href="#">Features</a>
-                            <a href="#">Pricing</a>
-                            <a href="#">Templates</a>
-                            <a href="#">Integrations</a>
+                            <a href="#">About</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Press</a>
                         </div>
                     </div>
 
                     <div className='space-y-4'>
-                        <p className='font-medium text-2xl'>Product</p>
+                        <p className='font-medium text-2xl'>Resources</p>
                         <div className='text-[16px] opacity-80 space-y-4 flex flex-col'>
-                            <a href="#">Features</a>
-                            <a href="#">Pricing</a>
-                            <a href="#">Templates</a>
-                            <a href="#">Integrations</a>
+                            <a href="#">Documentation</a>
+                            <a href="#">Help Center</a>
+                            <a href="#">Community</a>
+                            <a href="#">Contact</a>
                         </div>
                     </div>
 
                     <div className='space-y-4'>
                         <p className='font-medium text-2xl'>Social Links</p>
                         <div className='flex items-center gap-6'>
-                            <a href="#" className='bg-white p-2.5 rounded-full'>
+                            <a href="#" className='bg-white p-2.5 rounded-full hover:opacity-60 transition-opacity'>
                             <FaInstagram className='text-2xl text-black'/>
                             </a>
-                            <a href="#"  className='bg-white p-2.5 rounded-full'>
+                            <a href="#"  className='bg-white p-2.5 rounded-full hover:opacity-60 transition-opacity'>
                             <FaFacebook className='text-2xl text-black'/>
                             </a>
-                            <a href="#"  className='bg-white p-2.5 rounded-full'>
+                            <a href="#"  className='bg-white p-2.5 rounded-full hover:opacity-60 transition-opacity'>
                             <FaXTwitter className='text-2xl text-black'/>
                             </a>
                         </div>

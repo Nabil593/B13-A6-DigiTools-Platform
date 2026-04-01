@@ -11,8 +11,8 @@ const CtaSection = () => {
 
                 <div className='text-center'>
                     <div className='flex items-center justify-center gap-4 mb-4'>
-                    <button className='px-5 py-3 bg-white  rounded-full cursor-pointer'> <span className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-bold'>Explore Products</span></button>
-                    <button className='lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] px-8.5 py-3 font-medium border-2 border-gray-100 text-white rounded-full'>View Pricing</button>
+                    <button className='px-5 py-3 bg-white  rounded-full cursor-pointer hover:opacity-80 transition-opacity'> <span className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] font-bold'>Explore Products</span></button>
+                    <button className='lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] px-8.5 py-3 font-medium border-2 border-gray-100 text-white rounded-full hover:opacity-80 transition-opacity cursor-pointer'>View Pricing</button>
                     </div>
                     <p className='text-[16px] text-gray-300'>14-day free trial • No credit card required • Cancel anytime</p>
                 </div>

@@ -56,9 +56,9 @@ const Navber = ({ cartItem, visible, setOpen }) => {
                         )}
                     </div>
 
-                    <a href="#" className='text-[16px] font-medium ml-2'>Login</a>
+                    <a href="#" className='text-[16px] font-medium ml-2 hover:text-[#4F39F6] transition-colors'>Login</a>
                     
-                    <button className='hidden lg:block px-5 py-2.5 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-[16px] font-medium text-white rounded-full cursor-pointer hover:opacity-90 transition-opacity'>
+                    <button className='hidden lg:block px-5 py-2.5 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-[16px] font-medium text-white rounded-full cursor-pointer hover:opacity-80 transition-opacity'>
                         Get Started
                     </button>
 
